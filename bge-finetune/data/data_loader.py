@@ -7,7 +7,7 @@ import json
 
 def parse_args():
     parser = argparse.ArgumentParser(description='data helper')
-    parser.add_argument('--data_path', type=str,default="/root/autodl-fs/rag_emb_finetune/data_loader/Multi-Doc-QA-Chinese/raw", help='Multi-Doc-QA-Chinese/raw的地址')
+    parser.add_argument('--data_path', type=str,default="/root/autodl-fs/rag_emb_finetune/data_loader/raw", help='Multi-Doc-QA-Chinese/raw的地址')
     parser.add_argument('--save_home', type=str, default="/root/autodl-fs/rag_emb_finetune/data_loader", help='训练及验证数据保存路径')
     parser.add_argument('--ratio', type=float, default=0.99, help='训练集占比')
     parser.add_argument('--seed', type=int, default=42)
